@@ -29,9 +29,11 @@ body {
 
 img {
     position: absolute;
+    border: 5px solid black;
     top: 0;
     left: 0;
     width: 800px;
+    height: 520px;
     opacity: 0;
     transition: opacity 0.5s ease-out;
 }
@@ -52,13 +54,19 @@ button {
     font-size: 30px;
     opacity: 0;
     transition: opacity 300ms ease-out;
-    transition-delay: 2s;
+    transition-delay: 0.3s;
 }
-button#prev {
+#prev {
     top: 50%;
-    left: -10%;
+    left: 0;
 }
-button#next {
+#next {
     top: 50%;
-    right: -10%;
+    right: 0;
+}
+#prev:hover {
+    opacity: 1;
+}
+#next:hover {
+    opacity: 1;
 }
